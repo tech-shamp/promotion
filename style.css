@@ -1,0 +1,106 @@
+/* Declaring all the fonts present in my directory using relative path */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Inter-400.woff2);
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url(fonts/Inter-500.woff2);
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url(fonts/Inter-700.woff2);
+}
+
+/* Declaring root variables which will be used in the whole document */
+:root {
+  --BackGround: #f3ede5;
+  --black: #010101;
+  --orange: #f7b300;
+  --Button: #133416;
+  --NavLinks: #7d7c7b;
+  --headings: #6c6c6c;
+  --lightBlue: #758594;
+  --icons: #88aed0;
+  --blue: #0a263f;
+}
+
+/* Defining properties Which are going to be used almost everywhere */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--BackGround);
+}
+html {
+  font-size: 90%;
+}
+body {
+  font-family: "Inter";
+  font-weight: 500;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Now! I am going to style a section and give it width of 100% and hieght of 100%. I am not going to make much changes. */
+/* Section Styling */
+.MainSection {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 100%;
+  margin: 2.4rem 15rem;
+}
+
+/* NavBar Styling */
+.NavBar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NavBar ul li {
+  padding: 0.8rem;
+  list-style: none;
+}
+.NavBar a {
+  color: var(--NavLinks);
+}
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a.main-btn {
+  padding: 0.8rem 1.2rem;
+  background-color: var(--Button);
+  color: var(--BackGround);
+  font-family: "Inter";
+  font-weight: 700;
+  border-radius: 4px;
+  margin-left: 1.4rem;
+}
+.mobile-icon {
+  display: block;
+}
+/* End Of NavBar Styling */
+
+/* I am going to write out all the content and style them 1v1. I will try to make it 100% matching. */
+/* Header Section Start */
+
+/* End of Header Section */
+
+/* Let me write some css for responisvenes */
+/* Media Queries */
