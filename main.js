@@ -3,7 +3,7 @@ const path = require('path')
 
 const app = express()
 const renderPath = path.join(__dirname, 'public')
-const port = process.env.PORT || 1500
+const port = process.env.PORT || 999
 
 app.set('view engine', 'ejs')
 app.use(express.static(renderPath))
